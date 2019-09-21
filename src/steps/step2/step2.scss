@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.step2__form {
+    &-container {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 12% 20%;
+        padding: 3rem;
+        background-color: rgba($color:white, $alpha: 0.9);
+        box-shadow: 4px 5px 7px -2px rgba(0,0,0,0.75);
+        @media (max-width: $breakpoint-phone) {
+            grid-gap: 1rem;
+            margin: 2% 3%;
+            padding: 1rem;
+        }
+    }
+
+    &-submit {
+        font-size: 1.2rem;
+        font-weight: 700;
+        grid-column: 1 /span 2;
+        width: 20%;
+        margin-left: auto;
+        background-color: var(--m19-background);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 10%;
+        box-shadow: 1px 1px 2px -2px rgba(0,0,0,0.75);
+        @media (max-width: $breakpoint-phone) {
+            width: 50%;
+            margin: 0 auto;
+
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.form__field-success {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.1rem;
+}
+
+.form__field-error {
+    color: red;
+    border-top: red 1px solid;
+    width:100%;
+    display: inline-block;
+}
+
+.form__field-validation {
+    position: relative;
+}
+
+.form__field-control {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+.form__field-label {
+    font-weight: 500;
+}
+
+.form__field-container {
+    @media (max-width: $breakpoint-phone) {
+       grid-column: 1 /span 2;
+    }
+}
