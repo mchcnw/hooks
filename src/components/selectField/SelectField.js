@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import withField from '../../hocs/withField/withField';
 
 const renderOptions = (options) => {
@@ -16,6 +17,12 @@ const SelectField = ({ name, label, placeholder, options, onChange, value, isPri
             {renderOptions(options)}
         </select>
     )
+};
+
+
+SelectField.propTypes = {
+    options: propTypes.array.isRequired,
+    placeholder: propTypes.string,
 };
 
 export default withField(SelectField);

@@ -1,1 +1,1 @@
-export {default as step2Validate} from './step2/step2Validtor';
+export {default as step2Validate} from './step2/step2Validator';

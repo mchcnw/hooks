@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import './withField.scss';
 
 const withField = WrappedComponent => 
@@ -21,6 +22,16 @@ const withField = WrappedComponent =>
             </div>
         </div>
     )
+};
+
+withField.propTypes = {
+    fieldErrors: propTypes.array,
+    isPristine: propTypes.bool,
+    label: propTypes.string,
+    name: propTypes.string.isRequired,
+    onChange: propTypes.func.isRequired,
+    required: propTypes.bool,
+    value: propTypes.string,
 };
 
 export default withField;
